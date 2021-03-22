@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 11:05:09 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/09 12:08:32 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:26:19 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0 || dst == src)

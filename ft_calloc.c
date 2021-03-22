@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 12:57:39 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/14 12:43:29 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:11:14 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *memoria;
+	void	*memoria;
 
-	if (!(memoria = malloc(count * size)))
+	memoria = malloc(count * size);
+	if (!memoria)
 		return (NULL);
 	ft_bzero(memoria, count * size);
 	return (memoria);

@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 10:56:43 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/15 12:08:30 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:27:58 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t c;
+	size_t	c;
 
 	if (*needle == 0 || needle == haystack)
 		return ((char *)haystack);

@@ -6,16 +6,16 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 10:03:17 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/22 11:42:21 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:06:53 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-static size_t		largo(long num)
+static size_t	largo(long num)
 {
-	size_t				largo;
+	size_t		largo;
 
 	largo = 0;
 	if (num == 0)
@@ -36,7 +36,7 @@ static size_t		largo(long num)
 	return (largo);
 }
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	size_t			len;
 	long			nu;
@@ -44,7 +44,8 @@ char				*ft_itoa(int n)
 
 	nu = n;
 	len = largo(nu);
-	if (!(s = (char *)malloc(sizeof(char) * len + 1)))
+	s = (char *)malloc(sizeof(char) * len + 1);
+	if (!s)
 		return (NULL);
 	s[len--] = '\0';
 	if (n == 0)

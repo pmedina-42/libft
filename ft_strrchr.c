@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:30:08 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/22 10:50:42 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:10:22 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int len;
-	int i;
+	int	len;
+	int	i;
 
 	i = 0;
 	while (s[i])

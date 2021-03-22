@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 09:47:16 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/21 11:16:11 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:28:48 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t c;
-	size_t t;
-	size_t len;
+	size_t	c;
+	size_t	t;
+	size_t	len;
 
 	c = 0;
 	if (!src)

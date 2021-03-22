@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 12:38:17 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/30 12:44:42 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:08:27 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	*ft_strdup(const char *s1)
 	size_t	i;
 
 	i = ft_strlen(s1);
-	if (!(memoria = malloc(i + 1)))
+	memoria = malloc(i + 1);
+	if (!memoria)
 		return (NULL);
 	ft_memcpy(memoria, s1, i);
 	memoria[i] = '\0';

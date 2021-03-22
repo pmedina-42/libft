@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:19:34 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/14 12:41:53 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:01:36 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *str;
+	unsigned char	*str;
 
 	str = (unsigned char *)s;
 	while (n > 0)

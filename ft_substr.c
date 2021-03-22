@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:50:28 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/14 12:48:50 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:21:35 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (*s == '\0' || st > ft_strlen(s))
 		return (ft_strdup(""));
-	if (!(frase = (char *)malloc(sizeof(char) * (len + 1))))
+	frase = (char *)malloc(sizeof(char) * (len + 1));
+	if (!frase)
 		return (NULL);
 	while (i < len)
 	{

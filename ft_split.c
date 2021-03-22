@@ -6,7 +6,7 @@
 /*   By: pmedina- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 12:56:43 by pmedina-          #+#    #+#             */
-/*   Updated: 2020/07/21 11:14:51 by pmedina-         ###   ########.fr       */
+/*   Updated: 2021/03/23 00:23:37 by pmedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ static char	*ms(const char *s, char c)
 	i = 0;
 	while (s[i] != c && s[i])
 		i++;
-	if (!(string = (char *)malloc(sizeof(char) * (i + 1))))
+	string = (char *)malloc(sizeof(char) * (i + 1));
+	if (!string)
 		return (NULL);
 	i = 0;
 	while (s[i] != c && s[i])
@@ -51,7 +52,7 @@ static char	*ms(const char *s, char c)
 	return (string);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**tabla;
 	int		ns;
@@ -61,7 +62,8 @@ char		**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	ns = str_count(s, c);
-	if (!(tabla = (char **)malloc(sizeof(char *) * (ns + 1))))
+	tabla = (char **)malloc(sizeof(char *) * (ns + 1));
+	if (!tabla)
 		return (NULL);
 	while (*s)
 	{
