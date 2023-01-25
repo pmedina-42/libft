@@ -11,13 +11,19 @@ CFLAGS	= -Wall -Werror -Wextra
 ${NAME}:	${OBJS}
 			ar rc  ${NAME} ${OBJS}
 			ranlib ${NAME}
+
+ifeq ($(wildcard ${OBJS_B}),)
 bonus:		${OBJS} ${OBJS_B}
 			ar rc ${NAME} ${OBJS} ${OBJS_B}
 			ranlib ${NAME}
+endif
+
 all:		${NAME}
 clean:
 			${RM} ${OBJS} ${OBJS_B}
 fclean:		clean
 			${RM} ${NAME}
 re:			fclean bonus
+
 .PHONY: bonus all clean fclean re
+
